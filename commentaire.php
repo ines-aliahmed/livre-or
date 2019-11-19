@@ -23,9 +23,10 @@
 			</header>
 		
 			<div id="formulaire">
+				<h2>Ajouter un commentaire</h2>
 				<form method="post">
-					<textarea name="commentaire" id="commentaire°2"></textarea>
-					<input type="submit" name="submit" id="commentaire_3">
+					<textarea name="commentaire" id="formulaire_2"></textarea>
+					<input type="submit" name="submit" id="formulaire_3">
 				</form>
 				<?php
 					if(isset($_POST['submit']))

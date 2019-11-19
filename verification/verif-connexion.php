@@ -12,7 +12,7 @@
 
 			if($data['password'] != $passe)
 			{
-				echo "Mauvais login / mot de passe. Merci de recommencer <br />", $passe;
+				echo "Mauvais login / mot de passe. Merci de recommencer <br />";
 			}
 			else 
 			{

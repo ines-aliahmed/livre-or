@@ -20,27 +20,32 @@
 	.body{
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		align-items: center;
 		width: 80vw;
 		height: 80vh;
 		background-color: #FFFFFF;
 		color: #1E1E1E;
 		font-family: GeosansLight;
-		overflow: auto;
+		overflow: scroll;
 	}
 
 	::selection{
-		background-color: #1E1E1E;
-		color: #FFFFFF;
+		background-color: #22a1b0;
+		color: #000000;
 	}
 	
 	::-moz-selection {
-		background-color: #1E1E1E;
-		color: #FFFFFF;
+		background-color: #22a1b0;
+		color: #000000;
 	}
 
 	::placeholder{
 		font-family: GeosansLight;
+	}
+
+	::-webkit-scrollbar{
+		display: none;
 	}
 
 	@font-face{
@@ -53,6 +58,7 @@
 		header{
 			width: 100%;
 			height: 8vh;
+			background-color: #22a1b0;
 		}
 
 		header nav{
@@ -91,27 +97,31 @@
 			justify-content: center;
 			align-items: center;
 			width: 100%;
-			background-color: #FFFFFF;
+			height: 15vh;
+			background-color: #22a1b0;
 		}
 
 		footer nav{
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			padding: 20px;
+			width: 100%;
+			height: 15vh;
 		}
 
 		footer nav ul{
 			display: flex;
-			flex-direction: column;
-			align-items: center;
+			flex-direction: row;
+			justify-content: center;
 			list-style-type: none;
 			padding: 0;
+			margin: 0;
 		}
 
 		footer nav li{
-			padding: 5px;
+			padding: 10px 25px;
+			margin: 0 5px;
 		}
 
 		footer nav li a{
@@ -124,6 +134,7 @@
 
 	#accueil{
 		width: 100%;
+		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -135,23 +146,101 @@
 		text-align: center;
 	}
 
-	#img_minitel{
+/* LIVRE D'OR */
+
+	#livre_or{
 		width: 100%;
-		max-width: 1000px;
-		min-width: 500px;
-		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px;
 	}
 
-	#accueil p{
-		width: 60vw;
+	#ajout_commentaire{
+		display: block;
+		width: 50%;
+		background-color: #22a1b0;
+		padding: 10px;
+		text-decoration: none;
+		color: #000000;
 		text-align: center;
+	}
+
+	.commentaire{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		margin: 10px;
+	}
+
+	.commentaire_1{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		padding: 10px;
+		border-bottom: solid 1px #000000;
+	}
+
+	.commentaire_1 h3{
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+	}
+
+	.commentaire_2{
+		padding: 5px;
+	}
+
+/* COMMENTAIRE */
+
+	#formulaire{
+		width: 100%;
+		min-height: 57vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#formulaire form{
+		width: 60vw;
+		marging: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#formulaire input[type=submit]{
+		font-family: GeosansLight;
+		color: #000000;
+		cursor: pointer;
+	}
+
+	#formulaire_2{
+		height: 30vh;
+	}
+
+	#formulaire_2, #formulaire_3{
+		width: 100%;
+		margin: 10px auto;
+		padding: 1%;
+		font-size: 1vw;
+		background-color: #FFFFFF;
+		font-family: GeosansLight;
+		color: #1E1E1E;
+		border: solid 1px #000000;
+		box-sizing: content-box;
 	}
 
 /* INSCRIPTION */
 
 	#inscription{
 		width: 100%;
-		height: 90vh;
+		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -170,10 +259,11 @@
 	#inscription input[type=submit]{
 		font-family: GeosansLight;
 		color: #000000;
+		cursor: pointer;
 	}
 
 	.inscription_2{
-		width: 98%;
+		width: 100%;
 		margin: 10px auto;
 		padding: 1%;
 		font-size: 1vw;
@@ -181,13 +271,14 @@
 		font-family: GeosansLight;
 		color: #1E1E1E;
 		border: solid 1px #000000;
+		box-sizing: content-box;
 	}
 
 /* CONNEXION */
 
 	#connexion{
 		width: 100%;
-		height: 90vh;
+		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -206,29 +297,32 @@
 	#connexion input[type=submit]{
 		font-family: GeosansLight;
 		color: #000000;
+		cursor: pointer;
 	}
 
 	.connexion_2{
-		width: 98%;
+		width: 100%;
 		margin: 10px auto;
 		padding: 1%;
 		font-size: 1vw;
 		background-color: #FFFFFF;
 		border: solid 1px #000000;
 		color: #1E1E1E;
+		box-sizing: content-box;
 	}
 
 /* PROFIL */
 
 	#compte{
 		width: 100%;
+		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
 
-	#compte fieldset{
+	#compte form{
 		width: 60vw;
 		padding: 0 30px;
 		margin: 20px 0;
@@ -237,17 +331,23 @@
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 	#compte input[type=submit]{
+		font-family: GeosansLight;
+		cursor: pointer;
+	}
+	
+	#compte input[type=text]{
 		font-family: GeosansLight;
 	}
 
 	.compte_2{
-		width: 98%;
+		width: 100%;
 		margin: 10px auto;
 		padding: 1%;
 		font-size: 1vw;
 		background-color: #FFFFFF;
-		border: 0;
+		border: solid 1px #000000;
 		color: #1E1E1E;
+		box-sizing: content-box;
 	}

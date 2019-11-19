@@ -29,9 +29,8 @@
 			<div id="compte">
 				<form method="post">
 					<label>LOGIN :</label><input type="text" name="login" value="<?php echo $data['login']; ?>" class="compte_2"/><br /><br />
-					<legend>Modifier mot de passe</legend><br />
 					<label>MOT DE PASSE :</label><input type="password" name="passe" value="<?php echo $data['password']; ?>" class="compte_2"/><br /><br />
-					<input type="submit" value="Modifier" name="modifier" class="compte_2"/>
+					<input type="submit" value="Modifier" name="modifier" class="compte_2" id="bouton"/>
 					<?php
 					include("verification/verif-modification.php");
 					?>

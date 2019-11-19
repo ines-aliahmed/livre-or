@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" media="screen and (min-device-width: 480px)" href="style.css"/>
+		<link rel="stylesheet" href="style.css"/>
 		<title>Livre d'or - Livre d'or</title>
 	</head>
 	
@@ -25,7 +25,7 @@
 					}
 				
 					$connexion = mysqli_connect("localhost", "root", "", "livreor");
-					$requete = "SELECT * FROM commentaires";
+					$requete = "SELECT * FROM commentaires ORDER by id DESC";
 					$resultat = mysqli_query($connexion, $requete);
 				
 					while($donnees = mysqli_fetch_array($resultat))
@@ -39,8 +39,7 @@
 							$req = mysqli_query($connexion, $requete);
 							$data = mysqli_fetch_assoc($req);
 						
-							echo $data['login'];
-							echo $donnees['date'];
+							echo "<h3>Par: ", $data['login'], " le ", $donnees['date'], "</h3>";
 						?>
 					</div>
 					<div class="commentaire_2">
