@@ -1,0 +1,52 @@
+<?php
+	session_start();
+	if(isset($_SESSION['login']) || isset($_SESSION['password'])){}
+	else
+	{
+		header('Location: index.php');
+	}
+?>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="screen and (min-device-width: 480px)" href="style.css"/>
+		<title>Livre d'or - Livre d'or</title>
+	</head>
+	
+	<body>
+		<div class="body">
+			<header>
+				<?php
+					include("header.php");
+				?>
+			</header>
+		
+			<div id="formulaire">
+				<form method="post">
+					<textarea name="commentaire" id="commentaire°2"></textarea>
+					<input type="submit" name="submit" id="commentaire_3">
+				</form>
+				<?php
+					if(isset($_POST['submit']))
+					{
+						$utilisateur = $_SESSION['id'];
+						$commentaire = $_POST['commentaire'];
+						
+						$connexion = mysqli_connect("localhost", "root", "", "livreor");
+						$sql= "INSERT INTO commentaires (commentaire, id_utilisateur, date) VALUES ('$commentaire', '$utilisateur', NOW())";
+						mysqli_query($connexion, $sql);
+						mysqli_close($connexion);
+						echo '<meta http-equiv="refresh" content="0;URL=livre-or.php">';
+					}
+				?>
+			</div>
+		
+			<footer>
+				<?php
+					include("header.php");
+				?>
+			</footer>
+		</div>
+	</body>	
+</html>
