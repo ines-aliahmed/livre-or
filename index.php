@@ -22,14 +22,12 @@
 				<?php
 					if(isset($_SESSION['login']) || isset($_SESSION['password']))
 					{
-						echo "<h2>Bienvenue ".$_SESSION['login']." <br/> sur le site</h2>";
+						echo "<h2>Bienvenue a Briancon ".$_SESSION['login']."</h2>";
 					}
 					else{
-						echo "<h2>Bienvenue sur le site</h2>";
+						echo "<h2>Bienvenue a Briancon</h2>";
 					}
 				?>
-				
-				<img id="img_accueil" src="Images/logo-serre-chevalier.png">
 			</div>
 		
 			<footer>

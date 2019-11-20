@@ -39,7 +39,7 @@
 							$req = mysqli_query($connexion, $requete);
 							$data = mysqli_fetch_assoc($req);
 						
-							echo "<h3>Par: ", $data['login'], " le ", $donnees['date'], "</h3>";
+							echo "<h3>Posté le: ", $donnees['date'], " par ", $data['login'], "</h3>";
 						?>
 					</div>
 					<div class="commentaire_2">

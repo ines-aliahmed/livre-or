@@ -39,7 +39,7 @@
 				}
 				else
 				{
-					echo "Le pseudo $pseudo est déjà utilisé";
+					echo "Le pseudo $login est déjà utilisé";
 				}
 			}
 			else

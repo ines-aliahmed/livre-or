@@ -25,7 +25,7 @@
 			<div id="formulaire">
 				<h2>Ajouter un commentaire</h2>
 				<form method="post">
-					<textarea name="commentaire" id="formulaire_2"></textarea>
+					<textarea name="commentaire" id="formulaire_2" placeholder="ÉCRIVÉ VOTRE COMMENTAIRE"></textarea>
 					<input type="submit" name="submit" id="formulaire_3">
 				</form>
 				<?php

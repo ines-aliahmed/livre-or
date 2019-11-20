@@ -1,4 +1,5 @@
 <nav>
+	<img id="img_menu" src="Images/logo_mairie_briancon_print-300dpi.png">
 	<ul>
 		<li><a href="index.php">Accueil</a></li>
 		<li><a href="livre-or.php">Livre d'or</a></li>

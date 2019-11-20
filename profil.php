@@ -5,8 +5,9 @@
 	{
 		header('Location: index.php');
 	}
+	include("verification/verif-modification.php");
 	$connexion = mysqli_connect("localhost", "root", "", "livreor");
-	$sql = "SELECT * FROM utilisateurs WHERE login='".$_SESSION['login']."'";
+	$sql = "SELECT * FROM utilisateurs WHERE id='".$_SESSION['id']."'";
 	$req = mysqli_query($connexion, $sql);
 	$data = mysqli_fetch_assoc($req);
 ?>	
@@ -25,14 +26,14 @@
 					include("header.php");
 				?>
 			</header>
-		
+			
 			<div id="compte">
 				<form method="post">
 					<label>LOGIN :</label><input type="text" name="login" value="<?php echo $data['login']; ?>" class="compte_2"/><br /><br />
 					<label>MOT DE PASSE :</label><input type="password" name="passe" value="<?php echo $data['password']; ?>" class="compte_2"/><br /><br />
-					<input type="submit" value="Modifier" name="modifier" class="compte_2" id="bouton"/>
+					<input type="submit" value="MODIFIER" name="modifier" class="compte_2 compte_3"/>
 					<?php
-					include("verification/verif-modification.php");
+						include("verification/verif-modification-2.php");
 					?>
 				</form>
 			</div>

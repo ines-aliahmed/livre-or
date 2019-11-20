@@ -27,21 +27,23 @@
 		background-color: #FFFFFF;
 		color: #1E1E1E;
 		font-family: GeosansLight;
+		box-shadow: 0 0 10px #145F68;
 		overflow: scroll;
 	}
 
 	::selection{
 		background-color: #22a1b0;
-		color: #000000;
+		color: #FFFFFF;
 	}
 	
 	::-moz-selection {
 		background-color: #22a1b0;
-		color: #000000;
+		color: #FFFFFF;
 	}
 
 	::placeholder{
 		font-family: GeosansLight;
+		color: #FFFFFF;
 	}
 
 	::-webkit-scrollbar{
@@ -53,21 +55,26 @@
 		src: url("police/geo_sans_light/GeosansLight.ttf")
 	}
 
+	@font-face{
+		font-family: Leiko;
+		src: url("police/leixo/LEIXO-DEMO.ttf")
+	}
+
 	/* HEADER */
 
 		header{
 			width: 100%;
-			height: 8vh;
+			height: 12vh;
 			background-color: #22a1b0;
 		}
 
 		header nav{
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: space-around;
 			align-items: center;
 			width: 100%;
-			height: 8vh;
+			height: 12vh;
 		}
 
 		header nav ul{
@@ -84,9 +91,19 @@
 		}
 
 		header nav li a{
-			font-size: 20px;
-			color: #1E1E1E;
+			font-size: 23px;
+			color: #FFFFFF;
 			text-decoration: none;
+			transition: transform .2s;
+		}
+
+		header nav li a:hover{
+			transition: scale(1.5);
+			border-bottom: solid 1px #FFFFFF;
+		}
+
+		header nav img{
+			width: 10vh;
 		}
 
 	/* FOOTER */
@@ -126,28 +143,36 @@
 
 		footer nav li a{
 			font-size: 20px;
-			color: #1E1E1E;
+			color: #FFFFFF;
 			text-decoration: none;
+		}
+
+		footer nav img{
+			width: 10vh;
 		}
 
 /* ACCEUIL */
 
 	#accueil{
 		width: 100%;
-		min-height: 57vh;
+		height: 73vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background-image: url("Images/IMG_8100.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	#accueil h2{
 		padding: 20px;
 		text-align: center;
-	}
-
-	#img_accueil{
-		height: 40vh;
+		font-size: 70px;
+		font-family: Leiko;
+		color: #FFFFFF;
+		text-shadow: 0 0 10px #000000;
 	}
 
 /* LIVRE D'OR */
@@ -166,7 +191,8 @@
 		background-color: #22a1b0;
 		padding: 10px;
 		text-decoration: none;
-		color: #000000;
+		color: #FFFFFF;
+		font-size: 20px;
 		text-align: center;
 	}
 
@@ -202,7 +228,6 @@
 
 	#formulaire{
 		width: 100%;
-		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -211,7 +236,7 @@
 
 	#formulaire form{
 		width: 60vw;
-		marging: 10px;
+		margin: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -219,24 +244,31 @@
 	}
 	
 	#formulaire input[type=submit]{
-		font-family: GeosansLight;
-		color: #000000;
 		cursor: pointer;
 	}
 
 	#formulaire_2{
+		width: 100%;
 		height: 30vh;
+		padding: 15px;
+		margin: 20px;
+		font-size: 1.2vw;
+		background-color: #959595;
+		font-family: GeosansLight;
+		border: 0px;
+		color: #FFFFFF;
+		box-sizing: content-box;
 	}
 
-	#formulaire_2, #formulaire_3{
+	#formulaire_3{
 		width: 100%;
-		margin: 10px auto;
-		padding: 1%;
-		font-size: 1vw;
-		background-color: #FFFFFF;
+		padding: 15px;
+		margin: 20px;
+		font-size: 1.2vw;
+		background-color: #22a1b0;
 		font-family: GeosansLight;
-		color: #1E1E1E;
-		border: solid 1px #000000;
+		border: 0px;
+		color: #FFFFFF;
 		box-sizing: content-box;
 	}
 
@@ -244,7 +276,6 @@
 
 	#inscription{
 		width: 100%;
-		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -252,8 +283,8 @@
 	}
 
 	#inscription form{
-		width: 60vw;
-		padding: 30px;
+		width: 40vw;
+		margin: 20px 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -261,28 +292,29 @@
 	}
 	
 	#inscription input[type=submit]{
-		font-family: GeosansLight;
-		color: #000000;
 		cursor: pointer;
 	}
 
 	.inscription_2{
 		width: 100%;
-		margin: 10px auto;
-		padding: 1%;
-		font-size: 1vw;
-		background-color: #FFFFFF;
+		padding: 15px;
+		margin: 20px;
+		font-size: 1.2vw;
+		background-color: #959595;
 		font-family: GeosansLight;
-		color: #1E1E1E;
-		border: solid 1px #000000;
+		border: 0px;
+		color: #FFFFFF;
 		box-sizing: content-box;
+	}
+
+	.inscription_3{
+		background-color: #22a1b0;
 	}
 
 /* CONNEXION */
 
 	#connexion{
 		width: 100%;
-		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -290,8 +322,8 @@
 	}
 
 	#connexion form{
-		width: 60vw;
-		padding: 30px;
+		width: 40vw;
+		margin: 20px 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -299,27 +331,29 @@
 	}
 	
 	#connexion input[type=submit]{
-		font-family: GeosansLight;
-		color: #000000;
 		cursor: pointer;
 	}
 
 	.connexion_2{
 		width: 100%;
-		margin: 10px auto;
-		padding: 1%;
-		font-size: 1vw;
-		background-color: #FFFFFF;
-		border: solid 1px #000000;
-		color: #1E1E1E;
+		padding: 15px;
+		margin: 20px;
+		font-size: 1.2vw;
+		background-color: #959595;
+		font-family: GeosansLight;
+		border: 0px;
+		color: #FFFFFF;
 		box-sizing: content-box;
+	}
+
+	.connexion_3{
+		background-color: #22a1b0;
 	}
 
 /* PROFIL */
 
 	#compte{
 		width: 100%;
-		min-height: 57vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -327,8 +361,7 @@
 	}
 
 	#compte form{
-		width: 60vw;
-		padding: 0 30px;
+		width: 40vw;
 		margin: 20px 0;
 		display: flex;
 		flex-direction: column;
@@ -337,21 +370,26 @@
 	}
 
 	#compte input[type=submit]{
-		font-family: GeosansLight;
 		cursor: pointer;
 	}
 	
-	#compte input[type=text]{
-		font-family: GeosansLight;
+	#compte label{
+		width: 100%;
+		margin: auto;
 	}
 
 	.compte_2{
 		width: 100%;
-		margin: 10px auto;
-		padding: 1%;
-		font-size: 1vw;
-		background-color: #FFFFFF;
-		border: solid 1px #000000;
-		color: #1E1E1E;
+		padding: 15px;
+		margin: 20px;
+		font-size: 1.2vw;
+		background-color: #959595;
+		font-family: GeosansLight;
+		border: 0px;
+		color: #FFFFFF;
 		box-sizing: content-box;
+	}
+
+	.compte_3{
+		background-color: #22a1b0;
 	}

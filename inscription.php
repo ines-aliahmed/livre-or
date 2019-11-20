@@ -28,7 +28,7 @@
 					<input type="password" name="passe" class="inscription_2" placeholder="MOT DE PASSE"/>
 					<input type="password" name="passe2" class="inscription_2" placeholder="CONFIRMATION MOT DE PASSE"/>
 					<label class="inscription_2"><input type="checkbox" name="condition"/> J'accepte les conditions générales d'utilisation.</a></label>
-					<input type="submit" value="M'inscrire" name="inscription" class="inscription_2"/>
+					<input type="submit" value="INSCRIPTION" name="inscription" class="inscription_2 inscription_3"/>
 					<?php
 					include("verification/verif-inscription.php");
 					?>

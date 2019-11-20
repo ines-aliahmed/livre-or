@@ -26,7 +26,7 @@
 				<form method="post">
 					<input type="text" name="login" class="connexion_2" placeholder="LOGIN"/>
 					<input type="password" name="passe" class="connexion_2" placeholder="MOT DE PASSE"/>
-					<input type="submit" value="Se connecter" name="Connexion" class="connexion_2"/>
+					<input type="submit" value="CONNEXION" name="Connexion" class="connexion_2 connexion_3"/>
 					<?php
 					include("verification/verif-connexion.php");
 					?>
