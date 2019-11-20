@@ -235,6 +235,18 @@
 		justify-content: center;
 	}
 
+	#formulaire h2{
+		width: 60vw;
+		padding: 15px;
+		margin: 20px;
+		font-size: 1.2vw;
+		background-color: #22a1b0;
+		font-family: GeosansLight;
+		border: 0px;
+		color: #FFFFFF;
+		text-align: center;
+	}
+
 	#formulaire form{
 		width: 60vw;
 		margin: 0;
