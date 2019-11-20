@@ -28,6 +28,8 @@
 						echo "<h2>Bienvenue sur le site</h2>";
 					}
 				?>
+				
+				<img id="img_accueil" src="Images/logo-serre-chevalier.png">
 			</div>
 		
 			<footer>

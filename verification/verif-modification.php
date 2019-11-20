@@ -37,5 +37,6 @@
 		{
 			echo "Veuillez remplir toutes les casses";
 		}
+		mysqli_close($connexion);
 	}
 ?>

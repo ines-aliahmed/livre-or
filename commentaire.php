@@ -39,6 +39,7 @@
 						mysqli_query($connexion, $sql);
 						mysqli_close($connexion);
 						echo '<meta http-equiv="refresh" content="0;URL=livre-or.php">';
+						mysqli_close($connexion);
 					}
 				?>
 			</div>

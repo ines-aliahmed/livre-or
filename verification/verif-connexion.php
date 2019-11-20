@@ -26,5 +26,6 @@
 		{
 			echo "Remplissez tous les champs pour vous connectez !";
 		}
+		mysqli_close($connexion);
 	}	
 ?>
