@@ -33,9 +33,10 @@
 					{
 						$utilisateur = $_SESSION['id'];
 						$commentaire = $_POST['commentaire'];
+						$commentaire2 = addslashes($commentaire);
 						
 						$connexion = mysqli_connect("localhost", "root", "", "livreor");
-						$sql= "INSERT INTO commentaires (commentaire, id_utilisateur, date) VALUES ('$commentaire', '$utilisateur', NOW())";
+						$sql= "INSERT INTO commentaires (commentaire, id_utilisateur, date) VALUES ('$commentaire2', '$utilisateur', NOW())";
 						mysqli_query($connexion, $sql);
 						mysqli_close($connexion);
 						echo '<meta http-equiv="refresh" content="0;URL=livre-or.php">';
