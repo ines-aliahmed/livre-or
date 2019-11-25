@@ -25,7 +25,7 @@
 			<div id="formulaire">
 				<h2>Ajouter un commentaire</h2>
 				<form method="post">
-					<textarea name="commentaire" id="formulaire_2" placeholder="ÉCRIVÉ VOTRE COMMENTAIRE"></textarea>
+					<textarea name="commentaire" id="formulaire_2" placeholder="ÉCRIVEZ VOTRE COMMENTAIRE"></textarea>
 					<input type="submit" name="submit" id="formulaire_3">
 				</form>
 				<?php
@@ -40,7 +40,6 @@
 						mysqli_query($connexion, $sql);
 						mysqli_close($connexion);
 						echo '<meta http-equiv="refresh" content="0;URL=livre-or.php">';
-						mysqli_close($connexion);
 					}
 				?>
 			</div>
