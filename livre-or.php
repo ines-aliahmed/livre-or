@@ -49,7 +49,7 @@
 				
 				<?php
 					}
-					mysqli_close();
+					mysqli_close($connexion);
 				?>
 				</table>
 			</div>
