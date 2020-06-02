@@ -1,0 +1,153 @@
+body{
+	margin: auto;
+	height: 100vh;
+	display: flex;
+    flex-direction: column;	
+    font-family: 'Roboto', sans-serif;	
+   
+  background-image: url(https://static.lpnt.fr/images/2017/10/27/10978762lpw-10979123-article-jpg_4669854_980x426.jpg);
+  background-size: cover;
+
+
+}
+/* HEADER */
+
+header{
+    background-image: linear-gradient(rgb(148, 186, 243), rgb(184, 133, 133) 50%, rgb(138, 114, 114) 50%);
+    box-shadow: 1px 5px 10px rgb(2, 2, 2);
+	width: 100%;
+	height: 150px;
+
+    align-items: center;
+
+}
+	
+ul
+{	
+    display: flex;
+ flex-direction: row;	
+    list-style: none;
+justify-content:  space-around ;
+text-align: center;
+
+}
+/*index*/
+
+.lee
+{ 
+}
+
+section
+{text-align: center;
+background-color: white;
+margin: auto;}
+
+.img
+{    padding: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.titre
+
+{
+    animation: titre .75s ease-out infinite;
+    text-transform: uppercase;
+    font-size: 2.5em;
+ }
+ 
+ @keyframes titre {
+   from {
+     text-shadow:
+     0px 0px 10px  rgb(5, 104, 27),
+       0px 0px 10px  rgb(0, 0, 0),
+       0px 0px 25px  rgb(5, 104, 27),
+            0px 0px 50px rgb(1, 14, 3),
+       0px 0px 150px rgb(1, 14, 3),
+       0px 10px 100px rgb(1, 14, 3),
+           0px -10px 100px rgb(1, 14, 3),
+       0px -10px 100px rgb(1, 14, 3);
+   }
+ }
+
+
+}
+
+
+/*connexion inscription */
+form{
+    padding:10px;
+    width:280px;
+    }
+
+   fieldset {  
+         background-color:rgb(168, 248, 172)	;
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid #DF3F3F;
+    }
+   legend {
+    color:#DF3F3F;
+    font-weight:bold;
+    }
+   label {
+    margin-top:10px;
+    display:block;
+    }
+    button, input, select, textarea {
+        font-family : inherit;
+        font-size   : 100%;
+      }
+   input, textarea, select {
+        padding:3px;
+        border:1px solid #F5C5C5;
+        border-radius:5px;
+        width:200px;
+        box-shadow:1px 1px 2px #C0C0C0 inset;
+        }
+
+label{
+	color: #EDBB00;
+	font-size: 20px;
+}
+
+table { background-color: white;
+text-align: center;
+    border-collapse:collapse;
+    width:100%;
+    max-width:700px;
+    min-width:400px;
+justify-content: center;    }
+    
+
+    
+    table,th, td {
+    border: 1px solid gray;
+    }
+    
+    th, td {
+    height: 24px;
+    padding:4px;
+    vertical-align:middle;
+    }
+
+    li
+    {margin-left: 10%;}
+    
+    .coco{
+        color: white;
+        text-align: center;
+        animation: titre .75s ease-out infinite;
+        text-shadow: 0px 0px 5px rgb(134, 134, 134);
+         }
+         
+         @keyframes titre {
+           from {
+             text-shadow:0px 0px 10px rgb(181, 212, 243),
+               0px 0px 10px rgb(197, 226, 255), 
+               0px 0px 25px rgb(177, 212, 247),
+               0px -10px 100px rgb(230, 169, 194),
+               0px -10px 100px rgb(247, 161, 197);
+           }
+         }
+       }
